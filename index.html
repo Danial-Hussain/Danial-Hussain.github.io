@@ -15,7 +15,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="icon" href="img/profile.jpg" type="image/png" />
-    <title>Danial Hussain's Portfolio</title>
+    <title>Portfolio</title>
 
     <!--Bootstrap and JQuery-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -27,56 +27,13 @@
 
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
 
+    <script src="https://kit.fontawesome.com/66634f6c24.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-social.css" />
   </head>
 
   <body>
-
-<!-- Header Menu -->
-    <header class="header_area">
-      <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <a class="navbar-brand" href="index.html"
-              ><img src="img/profile.jpg" width="80px" alt=""
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse offset"
-              id="navbarSupportedContent"
-            >
-              <ul class="nav navbar-nav menu_nav justify-content-end">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/Danial-Hussain">GitHub</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href= "https://www.linkedin.com/in/danial-hussain-95b054167/">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mailto:ali.danial.hussain@gmail.com">Email</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
 
     <!-- Porfolio -->
     <section class="section_gap portfolio_area" id="work">
@@ -84,20 +41,38 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <div class="main-title">
-              <h1>Danial Hussain</h1>
-              <p>
-                Welcome! My name is Danial Hussain, and I am a freshman at the University of Florida. I'm excited to have been admitted into the Honors Program, and will be pursuing a major in Data Science.
+              <div class="container">
+                <img src="img/profile.jpg" style="width: 250px; margin-top: -20px;">
+                <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+                  <p style="color: white; font-size: 18.5px;">
+                    Welcome! My name is Ali Danial Hussain, and I am a student studying Data Science at the <a href="https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/DAT_BS/" style="color: #33d9b2">University of Florida</a> Honors College.
 
-                This page contains information about my technical skills as well as some interesting projects I've been working on. If you are interested in my background, you can find information about my education and experience on my LinkedIn.
+                    This page contains information about my technical skills as well as some interesting <a href="https://share.streamlit.io/danial-hussain/tennis-analytics-dashboard/main/dashboard.py" style="color: #33d9b2">projects</a> I've been working on. If you are interested in my background, you can find information about my education and experience on my LinkedIn.
 
-                Thanks for taking the time to visit my site. If you are interested in my work, have any questions, or just want to say hi, please feel free to reach out!
+                    Thanks for taking the time to visit my site. If you are interested in my work, have any questions, or just want to say hi, please feel free to <a href="mailto:ali.danial.hussain@gmail.com" style="color: #33d9b2">reach out!</a> </p>
+                  </div>
+              </div>
+              <ul class="list-group list-group-horizontal-md">
+
+                <a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/in/ali-danial-hussain/" style="margin-top: 10px;margin-right: 6px; background-color: #92ddc8;">
+                  <span class="fa fa-linkedin"></span> LinkedIn
+                </a>
+
+                <a class="btn btn-block btn-social btn-github" href="https://github.com/Danial-Hussain" style="margin-top: 10px; margin-right: 6px; background-color: #81b69d;">
+                  <span class="fa fa-github"></span> GitHub
+                </a>
+
+                <a class="btn btn-block btn-social btn-google" href="mailto:ali.danial.hussain@gmail.com" style="margin-top: 10px; margin-right: 6px; background-color: #5aa17f;">
+                  <span class="fa fa-google"></span> Gmail
+                </a>
+              </ul>
               </p>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="projects_fillter">
+            <div class="projects_fillter" style="margin-top: -40px; background-color: #137a63;">
               <ul class="filter list">
                 <li class="active" style="font-size: 1.1em;">Projects Portfolio</li>
               </ul>
@@ -107,7 +82,23 @@
         <div class="projects_inner row grid">
           <div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
 
-          <div class="col-lg-3 col-sm-6 col-sm-12 viz grid-item">
+          <div class="col-lg-3 col-sm-6 viz grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/tennis.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://share.streamlit.io/danial-hussain/tennis-analytics-dashboard/main/dashboard.py">
+                  <h4>Tennis Analytics Dashboard</h4>
+                </a>
+                <p>Streamlit/Pandas/Matplotlib</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 viz grid-item">
             <div class="projects_item">
               <img
                 class="img-fluid w-100"
@@ -124,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6 col-sm-12 viz grid-item">
+          <div class="col-lg-3 col-sm-6 viz grid-item">
             <div class="projects_item">
               <img
                 class="img-fluid w-100"
@@ -219,38 +210,6 @@
                   <h4>University of Michigan- Applied Machine Learning with Python Certificate</h4>
                 </a>
                 <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 viz grid-item">
-            <div class="projects_item">
-              <img class="img-fluid w-100" src="img/book.jpg" alt="" />
-              <div class="projects_text">
-                <a
-                  href="https://github.com/Danial-Hussain/Book-Genre-CNN"
-                >
-                  <h4>Don't Judge a Book by its Cover?</h4>
-                </a>
-                <p>Computer Vision/Web Scraping</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 viz grid-item">
-            <div class="projects_item">
-              <img
-                class="img-fluid w-100"
-                src="img/fantasy.png"
-                alt=""
-              />
-              <div class="projects_text">
-                <a
-                  href="https://github.com/Danial-Hussain/Fantasy_EDA"
-                >
-                  <h4>
-                    Fantasy Football EDA
-                  </h4>
-                </a>
-                <p>Exploratory Data Analysis</p>
               </div>
             </div>
           </div>
